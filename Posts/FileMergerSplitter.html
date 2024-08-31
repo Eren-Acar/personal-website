@@ -1,0 +1,117 @@
+<html><head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title> A File Splitter and Merger Application: FileMergerSplitter | Eren Acar</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <link href="post_styles.css" rel="stylesheet"/></head>
+  <body>
+  <header>
+  <div class="header-content">
+  <h1>Eren Acar</h1>
+  <p>Software Development Student</p>
+  </div>
+  </header>
+
+  <nav>
+  <ul>
+    <li><a href="../main.html">Home</a></li>
+    <li><a href="../main.html#about">About</a></li>
+    <li><a href="../blog.html">Blog</a></li>
+    <li><a href="../main.html#contact">Contact</a></li>
+    <li><a href="../main.html#work-history">Work History</a></li>
+    <li><a href="../main.html#education-history">Education History</a></li>
+    <div class="social-links">
+      <a href="https://github.com/Eren-Acar" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/acar-eren/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.kaggle.com/acareren" rel="noopener noreferrer" target="_blank"><i class="fab fa-kaggle"></i></a>
+      
+    </div>
+    <a class="icon-link" href="../search.html">
+      <i class="fas fa-search icon-class"></i>
+      </a>
+  </ul>
+  </nav>
+
+  <main>
+  <article class="blog-post fade-in">
+  <h1>A File Splitter and Merger Application: FileMergerSplitter</h1>
+  <div class="meta">Published on May 15, 2023</div>
+  <div class="blog-content">
+  <p>Recently, I needed to change an expression used to separate words in approximately 100 text files for a project I’ve been working on (“Eren,Acar” to “Eren Acar” for example). While doing this, it was crucial not to change filenames or rest of content within files.</p>
+  <p>I found a few simple tools online for merging text files. However after making edits in merged file, I needed to transfer content back to approximately 100 individual files without altering their contents. As far as I researched, there was no such tool available. I decided to develop an application using Python and PyQt5 library for GUI, capable of performing file splitting and merging operations I needed.</p>
+  <img alt="Working Principle of Tool" height="400" src="gallery/merger1.webp" width="600"/>
+  <p>My aim was as simple as it can be seen in the screenshot. Regardless of how many files I have, let them all merge into a single text file, and in merged file (according to screenshot, this file is text4.txt), there should be a marker indicating where a file starts and ends (in that, this marker is: name of the file + 50 “-” signs). Then, after necessary edits are made in merged file (text4.txt), it should be transferred back to original text documents without disrupting format.</p>
+  <h2>An Example Usage:</h2>
+  <p>Let’s say we have 3 text files named text1.txt, text2.txt, and text3.txt. Our goal is to merge text1.txt and text2.txt into text3.txt, and then transfer edits made in text3.txt back to text1.txt and text2.txt.</p>
+  <h2>Let’s Define Files:</h2>
+  <ol>
+  <li>Inside text1.txt: “This content was written in text1.txt.”</li>
+  <li>Inside text2.txt: “This content was written in text2.txt.”</li>
+  <img alt="FileMergerSplitter2" height="400" src="gallery/FileMergerSplitter2.webp" width="600"/>
+  </ol>
+  <h2>2.Merge Files:</h2>
+  <p>Next let’s run FileMergerSplitter.exe and click on “Merge Files” button then select text1.txt and text2.txt.</p>
+  <img alt="FileMergerSplitter3" height="400" src="gallery/FileMergerSplitter3.webp" width="600"/>
+  <p>Then in opened window let’s select file to merge (which in this example is text3.txt).</p>
+  <img alt="FileMergerSplitter4" height="400" src="gallery/FileMergerSplitter4.webp" width="600"/>
+  <p>After that operation a copy of text1.txt and text2.txt is created inside text3.txt.</p>
+  <img alt="FileMergerSplitter5" height="400" src="gallery/FileMergerSplitter5.webp" width="600"/>
+  <h2>3.Editing Merged File:</h2>
+  <p>After editing text3.txt as desired, let’s distribute it back to text1 and text2. In this example text3.txt has been edited as follows:</p>
+  <img alt="FileMergerSplitter6" height="400" src="gallery/FileMergerSplitter6.webp" width="600"/>
+  <h2>4.Distributing Contents from Merged File:</h2>
+  <p>To distribute texts, let’s click on “Distribute Files” button in program, then select merged file (in this example, text3.txt) then choose location for distributed files (in this example C:\Users\sifre\Desktop\Example):</p>
+  <img alt="FileMergerSplitter7" height="400" src="gallery/FileMergerSplitter7.webp" width="600"/>
+  <img alt="FileMergerSplitter8" height="400" src="gallery/FileMergerSplitter8.webp" width="600"/>
+  <p>Files splited:</p>
+  <img alt="FileMergerSplitter9" height="400" src="gallery/FileMergerSplitter9.webp" width="600"/>
+  <p>Now let’s check separated files.</p>
+  <img alt="FileMergerSplitter10" height="400" src="gallery/FileMergerSplitter10.webp" width="600"/>
+  <p>As expected, desired manipulations have been successfully applied to both text files.</p>
+  <h2>Result:</h2>
+  <p>While current version of program only operates with text files, I aim for it to work with .csv and Excel formats in future updates.</p>
+  <p>If you have any questions or suggestions, please feel free to mention them in the comments and I’d be happy to assist.</p>
+  </div>
+  </article>
+  </main>
+  <footer>
+  <div class="social-links">
+  <a href="https://github.com/Eren-Acar" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/acar-eren/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.kaggle.com/acareren" rel="noopener noreferrer" target="_blank"><i class="fab fa-kaggle"></i></a>
+
+  </div>
+  <p>© 2024 Eren Acar. All rights reserved.</p>
+  </footer>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const options = {
+          root: null,
+          threshold: 0.1,
+          rootMargin: '0px'
+        };
+  
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+  
+        fadeElements.forEach(element => {
+          element.style.opacity = 0;
+          observer.observe(element);
+        });
+      });
+  
+     
+  
+  
+    </script>
+  </body></html>

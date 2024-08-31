@@ -1,0 +1,313 @@
+<html><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Search | Eren Acar </title>
+<style>
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --text-color: #ddd;
+  --background-color: #1a1a1a;
+  --accent-color: #4a4a4a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 200px;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: var(--primary-color);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.search-result {
+  background-color: var(--accent-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.search-result h3 {
+  margin-top: 0;
+}
+
+.search-result a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.search-result a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+}
+</style>
+<link href="style.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="header-content">
+<h1>Eren Acar</h1>
+<p>Software Development Student</p>
+</div>
+</header>
+<nav>
+<ul>
+  <li><a href="main.html">Home</a></li>
+  <li><a href="main.html#about">About</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="main.html#contact">Contact</a></li>
+  <li><a href="main.html#work-history">Work History</a></li>
+  <li><a href="main.html#education-history">Education History</a></li>
+  <li><a href="https://www.kaggle.com/acareren" target="_blank">Kaggle</a></li>
+<li class="search-container">
+<input id="search-input" placeholder="Search..." type="text"/>
+<button id="search-button">Search</button>
+</li>
+</ul>
+</nav>
+<main id="main-content">
+<!-- Content will be dynamically inserted here -->
+</main>
+<footer>
+  <div class="social-links">
+  <a href="https://github.com/Eren-Acar" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/acar-eren/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.kaggle.com/acareren" rel="noopener noreferrer" target="_blank"><i class="fab fa-kaggle"></i></a>
+
+  </div>
+  <p>© 2024 Eren Acar. All rights reserved.</p>
+  </footer>
+<script>
+    // Sample data structure to represent your website content
+    const websiteContent = [
+      {
+        title: "Home",
+        url: "main.html",
+        content: "My name is Eren Acar. I created this website to publish about my work, archives, and thoughts in a blog format, and to keep my HTML/CSS and JavaScript knowledge fresh (practice is important). The design and coding of this site are completely my own - I'm not too ambitious about design or , as long as it works, that's enough :) -."
+      },
+      {
+        title: "About Me",
+        url: "/main.html#about",
+        content: "I'm Software Development 2nd student at Yeditepe University, İstanbul/Turkey. I interest in data science—more specifically, in machine learning and deep learning. Recently, I’ve been preparing and publishing various models and datasets on Kaggle. In addition, I work part-time as a Python Developer (back-end) and Tutor at Kodland PTE. Besides Python, I also spend some time working on various desktop applications using Java whenever I can."
+      },
+      {
+        title: "Blog",
+        url: "blog.html",
+        content: "Can't Always Coding :)"
+      },
+      {
+        title: "Contact",
+        url: "main.html#about",
+        content: "Feel free to contact me about anything! Email: eren.acar@std.yeditepe.edu.tr LinkedIn: https://www.linkedin.com/in/acar-eren/"
+      },
+      {
+        title: "Work History",
+        url: "main.html#work-history",
+        content: "Python Developer And Tutor Kodland PTE. Mar 2023 - Present Contractor employed Python Developer Tutor in Python Start and Python Pro courses"
+      },
+      {
+        title: "Educaiion History",
+        url: "main.html#education-history",
+        content: "B.S. in Software Development Yeditepe University Faculty of Computer and Information Sciences 2022 - Present"
+      },
+      {
+        title: "Kaggle",
+        url: "https://www.kaggle.com/acareren",
+        content: "Kaggle <3"
+      },
+      {
+        title: "Skills | Interests",
+        url: "main.html#skills",
+        content: "Python Machine Learning Data Visualization SQL Statistical Analysis Deep Learning Java"
+      }
+    ];
+
+    function searchContent(query) {
+      const results = websiteContent.filter(item => 
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.content.toLowerCase().includes(query.toLowerCase())
+      );
+
+      const mainContent = document.getElementById('main-content');
+      mainContent.innerHTML = '<h2>Search Results</h2>';
+
+      if (results.length === 0) {
+        mainContent.innerHTML += '<p>No results found.</p>';
+        return;
+      }
+
+      results.forEach(result => {
+        const resultElement = document.createElement('div');
+        resultElement.className = 'search-result';
+
+        const titleElement = document.createElement('h3');
+        const linkElement = document.createElement('a');
+        linkElement.href = result.url;
+        linkElement.textContent = result.title;
+        titleElement.appendChild(linkElement);
+
+        const contentElement = document.createElement('p');
+        contentElement.innerHTML = highlightQuery(result.content, query);
+
+        resultElement.appendChild(titleElement);
+        resultElement.appendChild(contentElement);
+
+        mainContent.appendChild(resultElement);
+      });
+
+      // Update the URL to reflect the search
+      history.pushState({}, '', `/search?q=${encodeURIComponent(query)}`);
+    }
+
+    function highlightQuery(content, query) {
+      const regex = new RegExp(`(${query})`, 'gi');
+      return content.replace(regex, '<span class="highlight">$1</span>');
+    }
+
+    document.getElementById('search-button').addEventListener('click', () => {
+      const query = document.getElementById('search-input').value;
+      searchContent(query);
+    });
+
+    document.getElementById('search-input').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        const query = document.getElementById('search-input').value;
+        searchContent(query);
+      }
+    });
+
+    // Handle browser back/forward navigation
+    window.addEventListener('popstate', () => {
+      const searchParams = new URLSearchParams(window.location.search);
+      const query = searchParams.get('q');
+      if (query) {
+        document.getElementById('search-input').value = query;
+        searchContent(query);
+      } else {
+        // Load the default content (you may want to implement this)
+        document.getElementById('main-content').innerHTML = '<h2>Everything you are looking for is here</h2>';
+      }
+    });
+
+    // Initial load
+    const searchParams = new URLSearchParams(window.location.search);
+    const initialQuery = searchParams.get('q');
+    if (initialQuery) {
+      document.getElementById('search-input').value = initialQuery;
+      searchContent(initialQuery);
+    } else {
+      // Load the default content (you may want to implement this)
+      document.getElementById('main-content').innerHTML = '<h2>Everything you are looking for is here</h2>';
+    }
+  </script>
+</body></html>

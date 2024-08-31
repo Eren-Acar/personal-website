@@ -354,3 +354,25 @@ footer {
   background-color: yellow;
   color: black;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding: 10px 10px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    
+    .right {
+        left: 40%;
+    }
+    
+    nav {
+        background-color: var(--secondary-color);
+        padding: 0.5rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}

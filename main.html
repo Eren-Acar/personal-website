@@ -237,36 +237,6 @@ footer {
   border-radius: 6px;
 }
 
-.blog-post {
-  background-color: var(--accent-color);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h3 {
-  margin-top: 0;
-}
-
-.blog-post .meta {
-  font-size: 0.9rem;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
-
-.blog-post .read-more {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.blog-post .read-more:hover {
-  text-decoration: underline;
-}
-
 </style>
 <link href="style.css" rel="stylesheet"/>
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
@@ -288,7 +258,6 @@ footer {
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="blog.html">Blog</a></li>
 <li><a href="#contact">Contact</a></li>
 <li><a href="#work-history">Work History</a></li>
 <li><a href="#education-history">Education History</a></li>
@@ -298,32 +267,18 @@ footer {
   <a href="https://www.kaggle.com/acareren" rel="noopener noreferrer" target="_blank"><i class="fab fa-kaggle"></i></a>
   
 </div>
-<a class="icon-link" href="search.html">
-<i class="fas fa-search icon-class"></i>
-</a>
 </ul>
 </nav>
 <main>
 <section class="fade-in" id="home">
 <h2>Hello World!</h2>
-<p>My name is Eren Acar. I created this website to publish about my work, archives, and thoughts in a blog format, and to keep my HTML/CSS and JavaScript knowledge fresh (practice is important). The design and coding of this site are completely my own - I'm not too ambitious about design or "front-end", as long as it works, that's enough :) -. </p>
+<p>My name is Eren Acar. I created this website to publish about my work and archives. The design and coding of this site are completely my own - I'm not too ambitious about design or "front-end", as long as it works, that's enough :) -. </p>
 </section>
 <section class="fade-in" id="about">
 <h2>About Me</h2>
-<p>I'm Software Development 2nd student at Yeditepe University, İstanbul/Turkey. I interest in data science—more specifically, in machine learning and deep learning. Recently, I’ve been preparing and publishing various models and datasets on Kaggle. In addition, I work part-time as a Python Developer (back-end) and Tutor at Kodland PTE. Besides Python, I also spend some time working on various desktop applications using Java whenever I can.</p>
+<p>I'm Software Development 3rd student at Yeditepe University, İstanbul/Turkey. I interest in data science, AI and its backend integrations. Recently, I’ve been preparing and publishing various models and datasets on Kaggle. I also work at Suplacon as a Software Developer Intern in Zwolle, Netherlands.</p>
 </section>
-<section class="fade-in" id="blog">
-<h2>Blog</h2>
 
-<div class="blog-post">
-<h3>A File Splitter and Merger Application: FileMergerSplitter</h3>
-<div class="meta">Published on Mar 29, 2024</div>
-<p>Recently, I needed to change an expression used to separate words in approximately 100 text files for a project I’ve been working on (“Eren,Acar” to “Eren Acar” for example). While doing this, it was crucial not to change filenames or rest of content within files.</p>
-<a class="read-more" href="Posts/FileMergerSplitter.html">Read more</a>
-</div>
-
-
-</section>
 
 <section class="fade-in" id="skills">
 <h2>Skills | Interests</h2>
@@ -343,21 +298,55 @@ footer {
 <!-- <div class="timeline"> -->
 <div class="timeline-item left">
 <div class="timeline-content">
+<h3>Software Developer Intern</h3>
+<h4>Suplacon, Zwolle/Netherlands</h4>
+<p>Sept 2025 - Present</p>
+<p>Developed an email automation system that classifies purchase orders, extracts structured data from emails/PDFs, and integrates with ERP systems through JSON-based outputs.</p>
+</div>
+</div>
+
+  <div class="timeline-item right">
+<div class="timeline-content">
+<h3>Software Developer Intern</h3>
+<h4>FinalCheck, Istanbul/Turkey</h4>
+<p>Jun 2025 - Aug 2025</p>
+<ul>
+  <li>Developed Model Contenxt Protocol (MCP) products using Python’s FastAPI framework. </li>
+  <li>Built web scraping applications utilizing BeautifulSoup, Requests, and Playwright libraries to extract and process data from dynamic websites.</li>
+</div>
+</div>
+
+  <div class="timeline-item left">
+  <div class="timeline-content">
+  <h3>Undergraduate Teaching Assistant</h3>
+  <h4>Faculty of Computer & Information Sciences, Yeditepe University, İstanbul/Turkey</h4>
+  <p>Feb 2025 - Jun 2025</p>
+  <ul>
+    <li>Supported laboratory sessions for CIS 111 and CIS 112</li>
+    <li>Guided students through hands-on programming exercises, assisted with debugging processes and provided individualized help during lab work. </li>
+  </ul>
+  </div>
+  </div>
+
+
+<div class="timeline-item right">
+<div class="timeline-content">
 <h3>Data Science Intern</h3>
-<h4>OptiWisdom</h4>
-<p>Sep 2024 - Present</p>
+<h4>OptiWisdom, Istanbul/Turkey</h4>
+<p>Sep 2024 - Feb 2025</p>
 <ul>
   <li>Project Based Internship Program</li>
+  <li>As part of this internship, <a href="https://scholar.google.com/citations?view_op=view_citation&hl=tr&user=tbGd97EAAAAJ&authuser=1&citation_for_view=tbGd97EAAAAJ:u5HHmVD_uO8C" target="_blank" >"Detection and Analysis of Cross-Selling Behaviors in Retail Sales" (in Turkish)</a> was published in YBS Ansiklopedi.</li>
 </ul>
 </div>
 </div>
 </div>
 
-  <div class="timeline-item right">
+  <div class="timeline-item left">
   <div class="timeline-content">
   <h3>Python Developer | Tutor</h3>
-  <h4>Kodland PTE.</h4>
-  <p>Mar 2023 - Present</p>
+  <h4>Kodland PTE. Remote</h4>
+  <p>Mar 2024 - Nov 2024</p>
   <ul>
     <li>Contractor employed</li>
     <li>Python Developer</li>
@@ -373,9 +362,20 @@ footer {
 <!-- <div class="timeline"> -->
 <div class="timeline-item left">
 <div class="timeline-content">
+<h3>Erasmus Exchange Program in Data Driven Innovation</h3>
+<h4>Windesheim University of Applied Sciences, Zwolle/Netherlands</h4>
+<h4>Faculty of Information and Communications Technology</h4>
+<p>2025 - Present</p>
+</div>
+</div>
+
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-content">
 <h3>B.S. in Software Development</h3>
-<h4>Yeditepe University</h4>
-<h4>Faculty of Computer and Information Sciences</h5>
+<h4>Yeditepe University, İstanbul/Turkey</h4>
+<h4>Faculty of Computer and Information Sciences</h4>
 <p>GPA: 3.44</p>
 <p>2022 - Present</p>
 </div>
@@ -397,7 +397,7 @@ footer {
   <a href="https://www.kaggle.com/acareren" rel="noopener noreferrer" target="_blank"><i class="fab fa-kaggle"></i></a>
   
 </div>
-<p>© 2024 Eren Acar. All rights reserved.</p>
+<p>© 2025</p>
 </footer>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
